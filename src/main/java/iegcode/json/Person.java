@@ -1,5 +1,10 @@
 package iegcode.json;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Date;
 import java.util.List;
 
@@ -9,6 +14,12 @@ public class Person {
 
     private String name;
 
+    @JsonProperty("full_name")
+    private String fullName;
+
+    @JsonIgnore
+    private String password;
+
 
     private List<String> hobbies;
 
@@ -16,7 +27,24 @@ public class Person {
 
     private Date createdAt;
 
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date updatedAt;
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public Date getCreatedAt() {
         return createdAt;
