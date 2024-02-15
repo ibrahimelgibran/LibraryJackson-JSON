@@ -1,0 +1,12 @@
+{
+  "marrried": false,
+  "age": 19,
+  "lastName": "ElGibran",
+  "firstName": "Ibrahim",
+  "address": {
+    "street": "Jl. Monjali",
+    "country": "Indonesia",
+    "city": "Sleman"
+  }
+}
+

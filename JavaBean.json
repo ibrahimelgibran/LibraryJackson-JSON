@@ -1,0 +1,13 @@
+{
+  "id": "1",
+  "name": "Gibran",
+  "hobbies": [
+    "Coding",
+    "Reading"
+  ],
+  "address": {
+    "street": "Jl. Monjali Nandan",
+    "city": "Sleman",
+    "country": "Indonesia"
+  }
+}
